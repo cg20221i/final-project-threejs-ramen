@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+    bottom: 25%;
+}
+
+h2,
+h3 {
+
+    color: #069e84;
+}
+
+a {
+    text-decoration: none;
+    color: #069e84;
+
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding-right: 2em;
+}
+
+.profile header {
+    text-align: center;
+}
+
+nav a:hover {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav {
+    background-color: #069e84;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #069e84;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.profile img {
+    width: 200px;
+    transition: 0.5s;
+}
+
+.profile img:hover {
+    width: 205px;
+    height: 205px;
+
+
+}
+
+.card {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0.2, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    height: 200px;
+    background-color: #cccccc;
+    background-image: radial-gradient(#069e84, grey);
+}
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+header {
+    display: inline;
+}
+
+.contact-details {
+
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding-right: 2em;
+    justify-content: left;
+}
+
+.contact-details:hover {
+    transition: transform 0.3s ease-out;
+    font-weight: bolder;
+}
+
+.cards h3 {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0.2, 0.5);
+    border-radius: 3px;
+    padding: 15px;
+    margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.header h1 {
+    padding-right: 2%;
+}
+
+/*.card  {
+    background-color: #069e84;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+} */
+
+/* Slider */
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+/* Dropdown */
+
+.dropbtn {
+    background-color: #069e84;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #04AA6D;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    transition: 0.2s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #069e84;
+}
+
+/*
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding-right: 2em;
+}*/
+
+/* Return Up button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #17d4b3;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
